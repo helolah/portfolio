@@ -1,0 +1,38 @@
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    user-select: none;
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        h1 {
+            font-weight: 300;
+            color: $white;
+            cursor: default;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 500px;
+            width: 100%;
+
+            li {
+                color: $text;
+                cursor: pointer;
+                transition: color 0.25s ease-in-out;
+                
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+#about {
+    text-align: center;
+    height: calc(100vh - 157px);
+    margin-top: 2rem;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    article {
+        text-align: center;
+        
+        p {
+            margin: 0 auto;
+            max-width: 800px;
+            width: 100%;
+            padding: 2.5rem 0 1.25rem;
+            font-weight: 300;
+            color: $text;
+        }
+    }
+}
