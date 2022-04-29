@@ -5,8 +5,11 @@ function Main() {
 
     return (
         <div>
+            <div className='white-space'></div>
             <Welcome />
+            <div className='white-space'></div>
             <About />
+            <div className='white-space'></div>
         </div>
     );
 }
