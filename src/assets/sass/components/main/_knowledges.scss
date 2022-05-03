@@ -1,0 +1,19 @@
+#knowledges {
+    padding: 4rem;
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 3.5rem;
+
+        &::before{
+            content: '< ';
+        }
+
+        &::after{
+            content: ' />';
+        }
+    }
+}

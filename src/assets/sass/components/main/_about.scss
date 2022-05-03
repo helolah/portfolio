@@ -1,10 +1,21 @@
 #about {
     padding: 4rem;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
 
     h2 {
         text-transform: uppercase;
         font-weight: 300;
+        font-size: 36px;
+        line-height: 3.5rem;
+
+        &::before{
+            content: '< ';
+        }
+
+        &::after{
+            content: ' />';
+        }
     }
 
     article {
@@ -14,10 +25,20 @@
             margin: 0 auto;
             max-width: 800px;
             width: 100%;
-            padding: 2.5rem 0 1.25rem;
+            padding: 4rem 1.25rem;
             font-weight: 300;
             color: $text;
             line-height: 2rem;
+
+            a {
+                color: $text;
+                text-decoration: none;
+                
+                &:hover {
+                    color: $text;
+                    text-decoration: none;
+                }
+            }
         }
     }
 
@@ -31,20 +52,18 @@
         
         a {
             color: $white;
-            margin-top: 2.5rem;
-            background-color: rgba(0, 0, 0, 0.1);
             padding: 1rem;
-            max-width: 110px;
+            max-width: 100px;
             width: 100%;
             border-radius: 5px;
-            border: 1px solid $blue_opacity;
+            border: 1px solid transparent;
             text-decoration: none;
-            transition: background-color 0.25s ease-in-out;
+            transition: border 0.25s ease-in-out;
             
             &:hover {
                 text-decoration: none;
                 color: $white;
-                background-color: $dark_blue;
+                border: 1px solid $blue_opacity;
             }
 
             p {

@@ -5,9 +5,12 @@ function Footer() {
     };
 
     return (
-        <div className="footer-content">
-            <p>Powered by <a href="https://github.com/helolah" target={'_blank'}>Helolah</a> - &copy; {getCurrentYear()} Todos os direitos reservados.</p>
-        </div>
+        <article>
+            <div className="footer-content">
+                <p>Powered by <a href="https://github.com/helolah" target={'_blank'}>Helolah</a></p>
+                <p>&copy; {getCurrentYear()} Todos os direitos reservados.</p>
+            </div>
+        </article>
     );
 }
 

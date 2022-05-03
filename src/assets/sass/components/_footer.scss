@@ -1,24 +1,30 @@
 footer {
-    max-width: 1200px;
+    // max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     bottom: 0;
     padding: 2rem 4rem;
     user-select: none;
-
-    .footer-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $text;
-        
-        a {
-            color: $white;
-            cursor: pointer;
-            text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
     
-            &:hover {
+    article {
+        padding-top: 2rem;
+        border-top: 1px solid $blue_opacity;
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $text;
+            
+            a {
+                color: $white;
+                cursor: pointer;
                 text-decoration: none;
+                
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }

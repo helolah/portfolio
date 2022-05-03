@@ -4,10 +4,11 @@ function Header() {
         <nav>
           <h1>Heloisa Fernanda</h1>
           <ul>
-            <li>Sobre Mim</li>
-            <li>Conhecimentos</li>
+            <li>Quem sou</li>
+            <li>Skills</li>
             <li>Serviços</li>
             <li>Projetos</li>
+            <li>Contato</li>
           </ul>
         </nav>
     );

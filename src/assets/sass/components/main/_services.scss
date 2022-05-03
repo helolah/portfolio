@@ -1,0 +1,47 @@
+#services {
+    padding: 4rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 3.5rem;
+
+        &::before{
+            content: '< ';
+        }
+
+        &::after{
+            content: ' />';
+        }
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding: 4rem 1.25rem;
+        font-weight: 300;
+        color: $text;
+        line-height: 2rem;
+
+        .item {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            padding: 4rem;
+            max-width: 350px;
+            width: 100%;
+            border: 1px solid transparent;
+            transition: border 0.25s ease-in-out;
+
+            &:hover {
+                border: 1px solid $blue_opacity;
+            }
+        }
+    }
+}

@@ -1,5 +1,9 @@
 import Welcome from '../components/main/Welcome';
 import About from '../components/main/About';
+import Knowledges from '../components/main/Knowledges';
+import Services from '../components/main/Services';
+import Projects from './main/Projects';
+import Contact from './main/Contact';
 
 function Main() {
 
@@ -9,7 +13,10 @@ function Main() {
             <Welcome />
             <div className='white-space'></div>
             <About />
-            <div className='white-space'></div>
+            <Knowledges />
+            <Services />
+            <Projects />
+            <Contact />
         </div>
     );
 }
