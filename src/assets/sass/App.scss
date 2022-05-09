@@ -2,14 +2,20 @@
 $black: #181818;
 $white: #F3F5F7;
 
-$dark_blue: #080E36;
-$blue: #0073FF;
+// $dark_blue: #080E36;
+// $blue: #0073FF;
+// $blue_opacity: #0073ff80;
+// $dark_blue: #0E0E0F;
+$dark_blue: #02030B;
+$blue: #030513;
 $blue_opacity: #0073ff80;
 
 $title: #313131;
 $text: #B6B6B6;
 
-$linear: linear-gradient(135deg, #181818 0%, #080E36 100%);
+// $linear: linear-gradient(135deg, #181818 0%, #080E36 100%);
+// $linear: linear-gradient(135deg, #0E0E0F 0%, #050820 100%);
+// $linearContent: linear-gradient(135deg, #0E0E0F 0%, #030513 100%);
 
 // Fonts
 @font-face {
@@ -35,12 +41,17 @@ $linear: linear-gradient(135deg, #181818 0%, #080E36 100%);
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "InterRegular";
     letter-spacing: 1px;
     height: 100vh;
     color: $white;
-    background: $linear;
+    // background: $linear;
+    background: $blue;
     background-attachment: fixed;
 }
 

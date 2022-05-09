@@ -5,7 +5,7 @@ function Services() {
     return (
         <section id="services">
             <h2>Serviços</h2>
-            <article className="content">
+            {/* <article className="content">
                 <div className="item">
                     <Icon.GitHub />
                     <h4>UI Design</h4>
@@ -19,7 +19,7 @@ function Services() {
                     <Icon.Linkedin />
                     <p>Javascript</p>
                 </div>
-            </article>
+            </article> */}
         </section>
     );
 }
