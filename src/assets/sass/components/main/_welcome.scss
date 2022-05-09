@@ -52,10 +52,8 @@
         .btns_welcome {
             display: flex;
             align-items: center;
-            // justify-content: center;
-            max-width: 320px;
+            max-width: 134px;
             width: 100%;
-            // margin: 0 auto;
 
             a {
                 background-color: transparent;
@@ -65,7 +63,6 @@
                 color: $text;
                 text-transform: uppercase;
                 text-decoration: none;
-                // margin: 0 1rem;
                 cursor: pointer;
                 transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
                 

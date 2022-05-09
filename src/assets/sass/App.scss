@@ -50,9 +50,14 @@ body {
     letter-spacing: 1px;
     height: 100vh;
     color: $white;
-    // background: $linear;
     background: $blue;
     background-attachment: fixed;
+
+    @media(max-width: 959px) {
+        &.active {
+            overflow: hidden;
+        }
+    }
 }
 
 // Styles
