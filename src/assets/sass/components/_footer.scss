@@ -6,6 +6,10 @@ footer {
     padding: 2rem 4rem;
     user-select: none;
     background-color: #02030B;
+
+    @media(max-width: 959px) {
+        padding: 2rem;
+    }
     
     article {
         padding-top: 2rem;

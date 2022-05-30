@@ -24,7 +24,7 @@
 
     .content {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         justify-content: space-between;
         margin: 0 auto;
         max-width: 1200px;
@@ -34,18 +34,41 @@
         color: $text;
         line-height: 2rem;
 
+        @media(max-width: 1280px) {
+            display: block;
+        }
+
+        @media(max-width: 959px) {
+            padding: 4rem 0;
+        }
+
         .item {
-            background-color: rgba(0, 0, 0, 0.4);
+            background: $blue;
             border-radius: 5px;
-            padding: 4rem;
+            padding: 2rem;
             max-width: 350px;
             width: 100%;
             border: 1px solid transparent;
             transition: border 0.25s ease-in-out;
+            text-align: left;
+
+            @media(max-width: 1280px) {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
 
             &:hover {
                 border: 1px solid $blue_opacity;
             }
+
+            h4 {
+                padding: 2rem 0;
+                font-size: 26px;
+            }
+        }
+
+        .whiteSpace {
+            padding: 1rem 0;
         }
     }
 }
