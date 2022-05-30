@@ -9,6 +9,7 @@ function Main() {
 
     return (
         <div>
+            <div className='nav-space'></div>
             <div className='white-space'></div>
             <Welcome />
             <div className='white-space'></div>
