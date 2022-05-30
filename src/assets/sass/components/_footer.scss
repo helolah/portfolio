@@ -16,16 +16,27 @@ footer {
             align-items: center;
             justify-content: space-between;
             color: $text;
-            
-            a {
-                color: $white;
-                cursor: pointer;
-                text-decoration: none;
-                
-                &:hover {
+
+            @media(max-width: 959px) {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .powered {
+                padding-bottom: 2rem;
+
+                a {
+                    color: $white;
+                    cursor: pointer;
                     text-decoration: none;
+                    
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
             }
+            
         }
     }
 }

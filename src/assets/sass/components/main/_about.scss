@@ -3,6 +3,10 @@
     text-align: center;
     background-color: #02030B;
 
+    @media(max-width: 959px) {
+        padding: 4rem 2rem;
+    }
+
     h2 {
         text-transform: uppercase;
         font-weight: 300;
@@ -29,6 +33,10 @@
             font-weight: 300;
             color: $text;
             line-height: 2rem;
+            
+            @media(max-width: 959px) {
+                padding: 4rem 0;
+            }
 
             a {
                 color: $text;
@@ -50,6 +58,11 @@
         align-items: center;
         justify-content: space-around;
         
+        @media(max-width: 959px) {
+            display: block;
+            text-align: center;
+        }
+        
         a {
             color: $white;
             padding: 1rem;
@@ -59,6 +72,11 @@
             border: 1px solid transparent;
             text-decoration: none;
             transition: border 0.25s ease-in-out;
+
+            @media(max-width: 959px) {
+                display: block;
+                margin: 0 auto;
+            }
             
             &:hover {
                 text-decoration: none;
