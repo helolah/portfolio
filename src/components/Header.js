@@ -6,14 +6,12 @@ function Header() {
     
     const handleToggle = () => {
         setActive(!isActive);
-        console.log(isActive);
 
         if ( isActive === true ) {
             document.body.classList.add('active');
         } else {
             document.body.classList.remove('active');
         }
-
     };
 
     return (
