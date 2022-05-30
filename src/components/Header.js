@@ -20,11 +20,11 @@ function Header() {
         <nav>
             <h1>Heloisa Fernanda</h1>
             <ul className={`${isActive ? "" : "active"}`}>
-                <li>Quem sou</li>
-                <li>Skills</li>
-                <li>Serviços</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+                <li><a href="#about">Quem sou</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
 
             <div className="mobile" onClick={handleToggle}>

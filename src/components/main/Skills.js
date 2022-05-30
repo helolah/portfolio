@@ -1,12 +1,12 @@
 import * as Icon from 'react-feather';
 
-function Knowledges() {
+function Skills() {
 
     return (
-        <section id="knowledges">
+        <section id="skills">
             <h2>Skills</h2>
         </section>
     );
 }
 
-export default Knowledges;
+export default Skills;

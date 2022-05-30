@@ -1,6 +1,6 @@
 import Welcome from '../components/main/Welcome';
 import About from '../components/main/About';
-import Knowledges from '../components/main/Knowledges';
+import Skills from '../components/main/Skills';
 import Services from '../components/main/Services';
 import Projects from './main/Projects';
 import Contact from './main/Contact';
@@ -13,7 +13,7 @@ function Main() {
             <Welcome />
             <div className='white-space'></div>
             <About />
-            <Knowledges />
+            <Skills />
             <Services />
             <Projects />
             <Contact />

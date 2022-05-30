@@ -52,15 +52,20 @@ header {
             li {
                 color: $text;
                 cursor: pointer;
-                transition: color 0.25s ease-in-out;
 
                 @media(max-width: 959px) {
                     text-align: center;
                     padding: 2rem 0;
                 }
-                
-                &:hover {
-                    color: $white;
+
+                a {
+                    color: $text;
+                    text-decoration: none;
+                    transition: color 0.25s ease-in-out;
+
+                    &:hover {
+                        color: $white;
+                    }
                 }
             }
         }
