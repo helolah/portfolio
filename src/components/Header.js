@@ -1,39 +1,53 @@
-import React, { useState } from "react";
+import React from 'react';
 
-function Header() {
+export default class Header extends React.Component {
 
-    const [isActive, setActive] = useState(true);
-    
-    const handleToggle = () => {
-        setActive(!isActive);
+    constructor(props) {
+        super(props);
 
-        if ( isActive === true ) {
+        this.state = {
+            isActive: true,
+        }
+
+        this.handleToggle = this.handleToggle.bind(this);
+    }
+
+    handleToggle = () => {
+        this.setState({
+            isActive: !this.state.isActive,
+        });
+        
+        if ( this.state.isActive === true ) {
+            this.responsiveNavList.classList.add('active');
+            this.responsiveNavButton.classList.add('active');
             document.body.classList.add('active');
         } else {
+            this.responsiveNavList.classList.remove('active');
+            this.responsiveNavButton.classList.remove('active');
             document.body.classList.remove('active');
         }
     };
 
-    return (
-        <nav>
-            <h1>Heloisa Fernanda</h1>
-            <ul className={`${isActive ? "" : "active"}`}>
-                <li><a href="#about">Quem sou</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-
-            <div className="mobile" onClick={handleToggle}>
-                <div className="btn-menu-bg" title="Menu">
-                    <button className={`btn-menu ${isActive ? "" : "active"}`}>
-                        <div className="hamburger"></div>
-                    </button>
+    render() {        
+        return (
+            <nav>
+                <h1>Heloisa Fernanda</h1>
+                <ul className={`${this.state.isActive ? "" : "active"}`} ref={(ul) => { this.responsiveNavList = ul; }}>
+                    <li><a href="#about">Quem sou</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+    
+                <div className="mobile" onClick={this.handleToggle}>
+                    <div className="btn-menu-bg" title="Menu">
+                        <button className={`btn-menu ${this.state.isActive ? "" : "active"}`} ref={(button) => { this.responsiveNavButton = button; }}>
+                            <div className="hamburger"></div>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    );
+            </nav>
+        );
+    }
 }
-
-export default Header;

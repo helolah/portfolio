@@ -59,6 +59,22 @@ body {
             overflow: hidden;
         }
     }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $blue_opacity;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $blue_opacity;
+    }
 }
 
 // Styles
