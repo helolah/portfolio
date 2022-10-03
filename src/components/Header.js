@@ -32,6 +32,7 @@ export default class Header extends React.Component {
         return (
             <nav>
                 <h1>Heloisa Fernanda</h1>
+                <h1 className="responsive">Heloisa</h1>
                 <ul className={`${this.state.isActive ? "" : "active"}`} ref={(ul) => { this.responsiveNavList = ul; }}>
                     <li><a href="#about">Quem sou</a></li>
                     <li><a href="#skills">Skills</a></li>

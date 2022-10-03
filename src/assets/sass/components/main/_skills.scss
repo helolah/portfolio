@@ -10,10 +10,18 @@
 
         &::before{
             content: '< ';
+
+            @media(max-width: 363px) {
+                content: ' ';
+            }
         }
 
         &::after{
             content: ' />';
+
+            @media(max-width: 363px) {
+                content: ' ';
+            }
         }
     }
 }

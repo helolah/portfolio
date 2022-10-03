@@ -2,6 +2,10 @@
     padding: 4rem;
     text-align: center;
 
+    @media(max-width: 959px) {
+        padding: 4rem 2rem;
+    }
+
     h2 {
         text-transform: uppercase;
         font-weight: 300;
@@ -10,10 +14,18 @@
 
         &::before{
             content: '< ';
+
+            @media(max-width: 363px) {
+                content: ' ';
+            }
         }
 
         &::after{
             content: ' />';
+
+            @media(max-width: 363px) {
+                content: ' ';
+            }
         }
     }
 }

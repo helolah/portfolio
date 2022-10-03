@@ -6,7 +6,7 @@ function Welcome() {
         <section id="welcome">
             <article>
                 <h1>Olá, eu sou a Heloisa :)</h1>
-                <p>Desenvolvedora Front-End.</p>
+                <p>E sou desenvolvedora Web!</p>
                 <div className="btns_welcome">
                     <a href="#contact">Contato</a>
                 </div>

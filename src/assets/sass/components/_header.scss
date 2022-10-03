@@ -13,15 +13,32 @@ header {
     }
     
     nav {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 1.25rem;
         
         h1 {
             font-weight: 300;
             color: $white;
             cursor: default;
+
+            @media(max-width: 363px) {
+                display: none;
+            }
+            
+            &.responsive {
+                display: none;
+    
+                @media(max-width: 363px) {
+                    display: block;
+                }
+            }
         }
+
 
         ul {
             list-style-type: none;

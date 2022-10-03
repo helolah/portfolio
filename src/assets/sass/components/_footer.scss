@@ -12,7 +12,12 @@ footer {
     }
     
     article {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
         padding-top: 2rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         border-top: 1px solid $blue_opacity;
 
         .footer-content {
