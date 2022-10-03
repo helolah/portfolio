@@ -13,10 +13,10 @@ function About() {
                 <p>
                     Meu nome é Heloisa Fernanda, tenho {getMyAge()} anos e moro no interior de São Paulo. Sou formada no curso de Sistemas para Internet pela <a href="http://fatecjahu.edu.br/" target={'_blank'}>FATEC Jahu</a>, e atuo no ramo de programação de aplicações para Web, onde minhas atividades profissionais se focam no Front-end e Web Design.
                     <br/><br/>
-                    Atualmente trabalho como programadora Web freelancer, desenvolvendo diversas plataformas para eventos online. Além disso, tenho projetos de estudos em ReactJS que você pode verificar mais abaixo na sessão de "Projetos" ou acessando meu perfil no <a href="https://github.com/helolah" target={'_blank'}>Github!</a>
+                    Atualmente trabalho como programadora Web freelancer, desenvolvendo diversas plataformas para eventos online e presenciais. Além disso, tenho projetos de estudos em ReactJS que você pode verificar mais abaixo na sessão de "Projetos" ou acessando meu perfil no <a href="https://github.com/helolah" target={'_blank'}>Github!</a>
                 </p>
             </article>
-            <article className="social">
+            {/* <article className="social">
                 <a href="https://github.com/helolah" target={'_blank'}>
                     <Icon.GitHub />
                     <p className="link">/helolah</p> 
@@ -29,7 +29,7 @@ function About() {
                     <Icon.Linkedin />
                     <p className="link">/helolah</p> 
                 </a>
-            </article>
+            </article> */}
         </section>
     );
 }
